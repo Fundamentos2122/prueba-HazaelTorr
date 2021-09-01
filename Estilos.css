@@ -1,0 +1,14 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p {
+    color:lightcyan;
+}
+
+#p1 {
+    text-align: justify;
+}
+
+.border {
+    border: 1px solid red;
+}
