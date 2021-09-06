@@ -5,6 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formularios</title>
+    <style>
+        [name="conditions"]:checked{
+            margin-left: 50px;
+        }
+        input:focus{
+            box-shadow: 2px 2px 20px red;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        #boton_fake {
+            border: 1px solid salmon;
+            border-radius: 2px;
+        }
+        #boton_fake:hover{
+            cursor: pointer;
+        }
+        input:required{
+            color: sienna;
+        }
+        #p_aux::after{
+            content: url("5f6097bd03c7c6ea4be6792846e4c9a1.jpg");
+        }
+        #p_aux::first-letter{
+            text-transform: uppercase;
+            font-size: 38px;
+        }
+        #p_aux::first-line{
+            color: chartreuse;
+        }
+        #p_aux::selection{
+            background-color: darksalmon;
+        }
+    </style>
 </head>
 <body>
     <form>
@@ -15,7 +49,7 @@
         <input type="date" name="birthday">
         <br>
         <label for="age">Edad</label>
-        <input type="number" name="age" step="0.5">
+        <input type="number" name="age" step="0.5" required>
         <br>
         <input type="checkbox" name="conditions">
         <label for="conditions">Acepta los términos y condiciones</label>
@@ -36,7 +70,7 @@
         <input type="radio" name="semester">
         <br><br>
         <label for="description"></label>
-        <textarea name="description" id="" cols="30" rows="10" disabled>Hola Mundo</textarea>
+        <textarea name="description" id="" cols="30" rows="10" /*disabled*/>Hola Mundo</textarea>
         <br>
         <label for="">Seleccionar</label>
         <select name="" id="">
@@ -48,5 +82,9 @@
         <input type="submit" value="Enviar">
         <button type="button">Guardar</button>
     </form>
+    <button>Otro Botón</button>
+    <div id="boton_fake">Presiona aquí</div>
+
+    <p id="p_aux">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Error magnam possimus mollitia illum placeat autem fugit voluptatibus! Voluptatum vero dolore magnam, reiciendis repellendus unde molestias distinctio, in placeat, nulla ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, ipsa accusamus! Recusandae numquam nobis temporibus! Repellat tempore, corrupti voluptates aspernatur nihil eum beatae velit amet excepturi dolorum placeat cumque sapiente?</p>
 </body>
 </html>
