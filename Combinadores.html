@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinadores</title>
+    <style>
+        #div1 p {
+            text-align: center;
+        }
+        #div1 > p {
+            border: 1px solid darkslateblue;
+        }
+        div + p {
+            color: lawngreen;
+        }
+        div ~ p {
+            text-indent: 20px;
+        }
+        div p > a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus sed mollitia ducimus adipisci magnam voluptatum, beatae tempora odio quisquam eligendi necessitatibus eveniet quam ipsa distinctio dolore blanditiis recusandae. Labore, quod?</p>
+        </div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique facilis repellat quis accusantium, labore repellendus tenetur nemo, hic iusto autem, reiciendis dolor ratione ipsa nam corporis quisquam inventore dolorum? Reiciendis!</p>
+    </div>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus laudantium aliquid cumque quam illum ipsum ut, architecto itaque quasi labore aperiam quisquam ex porro minus consequuntur eveniet enim doloribus neque.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit voluptatum natus similique eligendi nam vitae, animi libero ut blanditiis doloribus neque quaerat ea voluptate incidunt? Adipisci unde similique quas doloremque.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit atque impedit dignissimos magni, enim ex quaerat fugiat expedita, error doloribus et tempore temporibus ratione, voluptatem consequuntur beatae odio eaque quod.</p>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi in accusamus ipsam ratione praesentium porro nisi unde. Veritatis, quis iure tempore ipsa obcaecati dolor minima, fugit adipisci voluptatibus eius beatae?
+            <br>
+            <a href="">Hola Mundo</a>
+            <br>
+            <a href="">Link num 2</a>
+        </p>
+    </div>
+</body>
+</html>
