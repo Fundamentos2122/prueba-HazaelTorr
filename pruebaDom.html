@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">Hola Mundo</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente sint repellat incidunt obcaecati rerum quam cumque distinctio labore impedit. Culpa suscipit iusto beatae aliquam ratione deleniti inventore? Sequi, qui iste?</p>
+
+    <div id="h2"></div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis eum dolorem dolor tempore ad deserunt, mollitia adipisci, rerum molestiae ipsum nesciunt incidunt tenetur eos inventore sunt ut eius repellendus recusandae!</p>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, vitae neque cumque aperiam aspernatur consectetur rem. Fugit aliquam magnam adipisci at cum. Possimus repudiandae necessitatibus soluta impedit reiciendis libero doloribus?</p>
+    <script>
+        var title = document.getElementById("title");
+
+        title.innerText = "Nuevo título";
+
+        var P = document.getElementsByTagName("p");
+
+        /*var h2 = document.createElement("h2");
+        var text = document.createTextNode("Segundo Encabezado");
+        
+        h2.appendChild(text)
+    
+        document.body.insertBefore(h2, p(1));*/
+         var d_h2 = document.getElementById("h2");
+         
+         d_h2.innerHTML = "<h2>Segundo Encabezado</h2>"
+</script>
+</body>
+</html>
