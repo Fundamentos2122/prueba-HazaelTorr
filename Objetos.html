@@ -17,6 +17,8 @@
         <input type="submit" value="Enviar">
     </form>
 
+    <button onclick="clearLocalStorage()">Limpiar localStorage</button>
+
     <script>
         document.addEventListener("DOMContentLoaded", function(){
             var login = document.forms["login"];
@@ -28,26 +30,36 @@
                     username: this["username"].value,
                     password: this["password"].value,
                 };
-                console.log(data);
+                
+                //console.log(data);
 
                 var json = JSON.stringify(data);
 
-                console.log(json);
+                localStorage.setItem("login", json);
+                //console.log(json);
             });
 
-            loadForm();
+            //loadForm();
 
             function loadForm() {
-                var json = '{"username": "Hazael","password:""1234"}';
+                var json = localStorage.login;
+
+                if (json === undefined || json === "") {
+                    return ;
+                }
 
                 var data = JSON.parse(json);
-
-                console.log(data);
 
                 document.forms["login"]["username"].value = data.username;
                 document.forms["login"]["password"].value = data.password;
             }
         });
+
+        function clearLocalStorage() {
+            localStorage.removeItem("login");
+            window.location.reload();
+        }
+
     </script>
 </body>
 </html>
